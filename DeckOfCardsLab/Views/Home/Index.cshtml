@@ -1,0 +1,12 @@
+﻿@model Deck
+
+@foreach (Card c in Model.cards)
+{
+
+    <div >
+        <img src="@c.image" /><br />
+        @c.value of @c.suit (@c.code)
+
+    </div>
+}
+<br />
